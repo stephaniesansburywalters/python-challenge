@@ -18,7 +18,7 @@ with open(budget_data_CSV, 'r') as csvfile:
         Profit_Losses.append(int(row[1]))
         Date.append(row[0])
 
-    for i in range(1,len(Profit_Losses)):
+    for i in range(2,len(Profit_Losses)):
         Change.append(Profit_Losses[i] - Profit_Losses[i-1])   
         Average_Change = sum(Change)/len(Change)
 
